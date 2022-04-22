@@ -53,7 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\ExamDTO.cs" />
     <Compile Include="DTO\LessonDTO.cs" />
+    <Compile Include="DTO\QuestionBankDTO.cs" />
     <Compile Include="DTO\StudentDTO.cs" />
     <Compile Include="DTO\StudentGroupDTO.cs" />
     <Compile Include="DTO\UserDTO.cs" />

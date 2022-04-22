@@ -12,9 +12,12 @@ namespace Student.WebUI.Controllers
     {
         EFDbContext LessonContext;
 
+        ApplicationContext ClientContext { get; }
+
         public HomeController()
         {
             LessonContext = new EFDbContext("DefaultConnection1");
+            ClientContext = new ApplicationContext("DefaultConnection");
         }
         public ActionResult Index(string UserId)
         {
@@ -22,6 +25,14 @@ namespace Student.WebUI.Controllers
                         join c in LessonContext.Exams on u.ExamId equals c.ExamId
                         join l in LessonContext.Lessons on c.LessonId equals l.LessonId
                         select new StudentViewModel { Date = c.ExamDate, Lesson = l.Name, Value = u.Value };
+
+            //IQueryable<Guid> ExamIds = Enumerable.Empty<Guid>().AsQueryable();
+            //var evals = from u in ClientContext.ClientProfiles.Where(p => p.Id == UserId)
+            //            join sg in LessonContext.GroupLessons on u.StudentGroupId equals sg.GroupId
+            //            join e in LessonContext.Exams on sg.LessonId equals e.LessonId
+            //            join l in LessonContext.Lessons on e.LessonId equals l.LessonId
+            //            select new StudentViewModel { Date = e.ExamDate, Lesson = l.Name, Value = new double() };
+
             return View(evals.ToList());
         }
 

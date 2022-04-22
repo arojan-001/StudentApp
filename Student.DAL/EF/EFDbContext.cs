@@ -41,7 +41,11 @@ namespace Student.DAL.EF
 
         public DbSet<Exam> Exams { get; set; }
 
+       // public DbSet<Exams> Exam { get; set; }
+
         public DbSet<Evaluation> Evaluations { get; set; }
+
+
 
 
     }
