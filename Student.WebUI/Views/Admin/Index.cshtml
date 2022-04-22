@@ -1,0 +1,81 @@
+﻿@model Student.WebUI.Models.BaseViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    var eval = (List<Student.DAL.Entities.Evaluation>)ViewBag.Eval;
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div>All Groups</div>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-condensed table-bordered">
+            <tr>
+                <th class="text-right">ID</th>
+                <th>Name</th>
+            </tr>
+            @foreach (var item in Model.StudentGroup.StudentGroupList)
+            {
+                <tr>
+                    <td class="text-right">@item.Id</td>
+                    <td>
+                        @Html.ActionLink(item.Name, "EditGroup", "Group", new { id = item.Id },null)
+                    </td>
+                    <td class="text-center">
+                        @using (Html.BeginForm("DeleteGroup", "Group"))
+                        {
+                            @Html.Hidden("Id", item.Id)
+                            <input type="submit"
+                                   class="btn btn-default btn-xs"
+                                   value="Delete" />
+                        }
+                    </td>
+                    <td>
+                        @Html.ActionLink("Add Lesson", "GetGroupLessons", "Lesson", new { id = item.Id }, new { @class = "btn btn-default  btn-xs" })
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="panel-footer">
+        @Html.ActionLink("Add a New Group", "CreateGroup", "Group", null,
+            new { @class = "btn btn-default" })
+    </div>
+</div>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div>All Users</div>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-condensed table-bordered">
+            <tr>
+                <th class="text-right">Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Group</th>
+            </tr>
+            @foreach (var item in Model.Users.Where(p => p.Role != "admin" && p.StudentGroupId != 0))
+            {
+                <tr>
+                    <td class="text-right">@item.Name</td>
+                    <td class="text-right">@item.Address</td>
+                    <td class="text-right">@item.Email</td>
+                    <td class="text-right">@(Model.StudentGroup.StudentGroupList.FirstOrDefault(p => p.Id == item.StudentGroupId)?.Name)</td>
+                    <td>@(eval.Where(p => p.UserId == item.Id).ToList().Count == 0 ? 0 : eval.Where(p => p.UserId == item.Id).ToList().Average(p => p.Value)/ eval.Where(p => p.UserId == item.Id).ToList().Count )</td>
+                    <td>
+                        @Html.ActionLink("Add Evaluation", "AddEvaluation", "Lesson", new { Userid = item.Id, GroupId = item.StudentGroupId }, new { @class = "btn btn-default  btn-xs" })
+                    </td>
+                    <td>
+                        @Html.ActionLink("Averages", "Averages", "Lesson", new { Userid = item.Id, GroupId = item.StudentGroupId }, new { @class = "btn btn-default  btn-xs" })
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="panel-footer">
+        @Html.ActionLink("Add a New user", "Register", "Account", null,
+            new { @class = "btn btn-default" })
+    </div>
+</div>

@@ -1,0 +1,35 @@
+D:\Diplom\StudentApp\Student.DAL\obj\Debug\Student.DAL.csprojResolveAssemblyReference.cache
+D:\Diplom\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.CoreCompileInputs.cache
+D:\Diplom\StudentApp\Student.DAL\bin\Debug\Student.DAL.dll.config
+D:\Diplom\StudentApp\Student.DAL\bin\Debug\Student.DAL.dll
+D:\Diplom\StudentApp\Student.DAL\bin\Debug\Student.DAL.pdb
+D:\Diplom\StudentApp\Student.DAL\bin\Debug\EntityFramework.dll
+D:\Diplom\StudentApp\Student.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Diplom\StudentApp\Student.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Diplom\StudentApp\Student.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Diplom\StudentApp\Student.DAL\bin\Debug\EntityFramework.xml
+D:\Diplom\StudentApp\Student.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Diplom\StudentApp\Student.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Diplom\StudentApp\Student.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Diplom\StudentApp\Student.DAL\obj\Debug\Student.DAL.dll
+D:\Diplom\StudentApp\Student.DAL\obj\Debug\Student.DAL.pdb
+D:\Diplom\StudentApp\Student.DAL\obj\Debug\Student.DAL.Migrations.ContextB.MigrateDB.resources
+D:\Diplom\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.GenerateResource.Cache
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\bin\Debug\Student.DAL.dll.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\bin\Debug\Student.DAL.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\bin\Debug\Student.DAL.pdb
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\bin\Debug\EntityFramework.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\bin\Debug\EntityFramework.SqlServer.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\bin\Debug\EntityFramework.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\bin\Debug\EntityFramework.SqlServer.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.AssemblyReference.cache
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\obj\Debug\Student.DAL.Migrations.ContextB.MigrateDB.resources
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.GenerateResource.cache
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.CoreCompileInputs.cache
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.CopyComplete
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\obj\Debug\Student.DAL.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.DAL\obj\Debug\Student.DAL.pdb

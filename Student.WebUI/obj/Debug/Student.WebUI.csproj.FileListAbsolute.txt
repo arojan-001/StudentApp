@@ -1,0 +1,235 @@
+D:\Diplom\StudentApp\Student.WebUI\bin\ApplicationInsights.config
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\csc.exe
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\csc.exe.config
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\csc.rsp
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\csi.exe
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\csi.exe.config
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\csi.rsp
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.AppContext.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Collections.Immutable.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Console.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Diagnostics.Process.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.IO.Compression.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.IO.FileSystem.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.IO.Pipes.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Security.AccessControl.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Security.Claims.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Threading.Thread.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.ValueTuple.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Xml.XPath.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\vbc.exe
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\vbc.exe.config
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\vbc.rsp
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\VBCSCompiler.exe
+D:\Diplom\StudentApp\Student.WebUI\bin\roslyn\VBCSCompiler.exe.config
+D:\Diplom\StudentApp\Student.WebUI\bin\Student.WebUI.dll.config
+D:\Diplom\StudentApp\Student.WebUI\bin\Student.WebUI.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Student.WebUI.pdb
+D:\Diplom\StudentApp\Student.WebUI\bin\Antlr3.Runtime.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\EntityFramework.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\EntityFramework.SqlServer.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AI.DependencyCollector.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AI.Web.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AI.WindowsServer.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.ApplicationInsights.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.Web.Infrastructure.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Newtonsoft.Json.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.Helpers.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.Mvc.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.Optimization.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.Razor.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.WebPages.Deployment.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.WebPages.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.WebPages.Razor.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\WebGrease.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\EntityFramework.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\EntityFramework.SqlServer.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.Helpers.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.Mvc.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.Optimization.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.Razor.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.WebPages.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.WebPages.Deployment.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\System.Web.WebPages.Razor.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Antlr3.Runtime.pdb
+D:\Diplom\StudentApp\Student.WebUI\bin\Newtonsoft.Json.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.ApplicationInsights.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AI.DependencyCollector.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AI.WindowsServer.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AI.Web.xml
+D:\Diplom\StudentApp\Student.WebUI\obj\Debug\Student.WebUI.csprojResolveAssemblyReference.cache
+D:\Diplom\StudentApp\Student.WebUI\obj\Debug\Student.WebUI.csproj.CoreCompileInputs.cache
+D:\Diplom\StudentApp\Student.WebUI\obj\Debug\Student.WebUI.dll
+D:\Diplom\StudentApp\Student.WebUI\obj\Debug\Student.WebUI.pdb
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.Owin.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Owin.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Student.BLL.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Student.DAL.dll
+D:\Diplom\StudentApp\Student.WebUI\bin\Student.BLL.pdb
+D:\Diplom\StudentApp\Student.WebUI\bin\Student.BLL.dll.config
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.Owin.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Diplom\StudentApp\Student.WebUI\bin\Student.DAL.pdb
+D:\Diplom\StudentApp\Student.WebUI\bin\Student.DAL.dll.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\ApplicationInsights.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\csc.exe
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\csc.exe.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\csc.rsp
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\csi.exe
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\csi.exe.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\csi.rsp
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.AppContext.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Collections.Immutable.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Console.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Diagnostics.Process.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.IO.Compression.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.IO.FileSystem.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.IO.Pipes.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Security.AccessControl.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Security.Claims.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Security.Principal.Windows.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Threading.Thread.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.ValueTuple.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Xml.XPath.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\vbc.exe
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\vbc.exe.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\vbc.rsp
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\VBCSCompiler.exe
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\roslyn\VBCSCompiler.exe.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Student.WebUI.dll.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Student.WebUI.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Student.WebUI.pdb
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Antlr3.Runtime.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\EntityFramework.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\EntityFramework.SqlServer.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AI.DependencyCollector.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AI.Web.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AI.WindowsServer.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.ApplicationInsights.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.Owin.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.Web.Infrastructure.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Newtonsoft.Json.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Owin.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Student.BLL.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Student.DAL.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.Helpers.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.Mvc.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.Optimization.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.Razor.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.WebPages.Deployment.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.WebPages.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.WebPages.Razor.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\WebGrease.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Student.BLL.pdb
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Student.BLL.dll.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Student.DAL.pdb
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Student.DAL.dll.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\EntityFramework.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\EntityFramework.SqlServer.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.Owin.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.Helpers.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.Mvc.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.Optimization.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.Razor.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.WebPages.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.WebPages.Deployment.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\System.Web.WebPages.Razor.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Antlr3.Runtime.pdb
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Newtonsoft.Json.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.ApplicationInsights.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AI.DependencyCollector.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AI.WindowsServer.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\bin\Microsoft.AI.Web.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\obj\Debug\Student.WebUI.csproj.AssemblyReference.cache
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\obj\Debug\Student.WebUI.csproj.CoreCompileInputs.cache
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\obj\Debug\Student.WebUI.csproj.CopyComplete
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\obj\Debug\Student.WebUI.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.WebUI\obj\Debug\Student.WebUI.pdb

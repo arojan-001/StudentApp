@@ -1,0 +1,37 @@
+D:\Diplom\StudentApp\Student.BLL\obj\Debug\Student.BLL.csprojResolveAssemblyReference.cache
+D:\Diplom\StudentApp\Student.BLL\obj\Debug\Student.BLL.csproj.CoreCompileInputs.cache
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\Student.BLL.dll.config
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\Student.BLL.dll
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\Student.BLL.pdb
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\EntityFramework.dll
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\Student.DAL.dll
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\Student.DAL.pdb
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\Student.DAL.dll.config
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\EntityFramework.xml
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Diplom\StudentApp\Student.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Diplom\StudentApp\Student.BLL\obj\Debug\Student.BLL.dll
+D:\Diplom\StudentApp\Student.BLL\obj\Debug\Student.BLL.pdb
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\Student.BLL.dll.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\Student.BLL.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\Student.BLL.pdb
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\EntityFramework.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\EntityFramework.SqlServer.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\Student.DAL.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\Student.DAL.pdb
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\Student.DAL.dll.config
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\EntityFramework.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\EntityFramework.SqlServer.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\obj\Debug\Student.BLL.csproj.AssemblyReference.cache
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\obj\Debug\Student.BLL.csproj.CoreCompileInputs.cache
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\obj\Debug\Student.BLL.csproj.CopyComplete
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\obj\Debug\Student.BLL.dll
+G:\Benivo Programming Lessons\StudentApp\StudentApp\Student.BLL\obj\Debug\Student.BLL.pdb

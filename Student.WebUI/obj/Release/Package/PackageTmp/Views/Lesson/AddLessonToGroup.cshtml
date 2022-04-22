@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Add Lesson</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Group</h4>
+        <hr />
+        <input type="hidden" name="GroupId" value="@ViewBag.GroupId"/>
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            <select name="LessonId"  class="form-control">
+                @foreach (var item in (List<Student.DAL.Entities.Lesson>)ViewBag.Lessons)
+                {
+                    <option value="@item.LessonId">@item.Name</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index", "Admin")
+</div>
