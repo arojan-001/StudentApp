@@ -7,13 +7,13 @@ namespace Student.DAL.Migrations.ContextB
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class MigrateDB : IMigrationMetadata
+    public sealed partial class Student : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(MigrateDB));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Student));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805141824148_MigrateDB"; }
+            get { return "202204302323170_Student"; }
         }
         
         string IMigrationMetadata.Source

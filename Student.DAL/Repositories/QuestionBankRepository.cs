@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Student.DAL.Entities;
+using Student.DAL.Interfaces;
+namespace Student.DAL.Repositories
+{
+    public class QuestionBankRepository : BaseRepository, IQuestionBankRepository
+    {
+        public QuestionBankRepository(string connectionString) : base(connectionString)
+        {
+
+        }
+
+        public IEnumerable<QuestionBank> GetQuestion()
+        {
+            return GetAll<QuestionBank>();
+        }
+
+        public QuestionBank GetById(int id)
+        {
+            return GetAll<QuestionBank>().FirstOrDefault(x => x.Id == id);
+        }
+
+        public void SaveQuestion(QuestionBank product, bool isSaveChanges = true)
+        {
+            var dbProduct = Find<QuestionBank>(product.Id);
+            if (dbProduct == null)
+                Add<QuestionBank>(product);
+            else
+                SetValues(product, dbProduct);
+            if (isSaveChanges)
+                SaveChanges();
+        }
+
+        public QuestionBank DeleteQuestion(int id, bool isSaveChanges = true)
+        {
+            var dbEntry = Find<QuestionBank>(id);
+            if (dbEntry != null)
+            {
+                Remove(dbEntry);
+                if (isSaveChanges)
+                    SaveChanges();
+            }
+            return dbEntry;
+        }
+
+        public void SaveChanges()
+        {
+            db.SaveChanges();
+        }
+    }
+}

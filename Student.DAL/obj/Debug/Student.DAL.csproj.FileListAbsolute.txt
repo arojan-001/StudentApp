@@ -44,10 +44,10 @@ C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\bin\Debu
 C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.AssemblyReference.cache
-C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\obj\Debug\Student.DAL.Migrations.ContextB.MigrateDB.resources
-C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.GenerateResource.cache
 C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.CoreCompileInputs.cache
 C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.CopyComplete
 C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\obj\Debug\Student.DAL.dll
 C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\obj\Debug\Student.DAL.pdb
+C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.AssemblyReference.cache
+C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\obj\Debug\Student.DAL.Migrations.ContextB.Student.resources
+C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.DAL\obj\Debug\Student.DAL.csproj.GenerateResource.cache

@@ -11,6 +11,7 @@ namespace Student.BLL.Interfaces
         IUserService CreateUserService(string connection);
 
         IStudentGroupService CreateStudentGroupService(string connection);
+        IStudentService CreateStudentService(string connection);
 
         ILessonService CreateLessonService(string connection);
 

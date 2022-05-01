@@ -21,6 +21,12 @@ namespace Student.DAL.Entities
 
         public DateTime ExamDate { get; set; }
 
+        public int Duration { get; set; }
+
+        public int FullMark { get; set; }
+
+        public DateTime Created { get; set; }
+
         public ICollection<Evaluation> Evaluations { get; set; }
 
         public StudentGroup StudentGroup { get; set; }

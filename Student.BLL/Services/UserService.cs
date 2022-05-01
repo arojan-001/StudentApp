@@ -2,6 +2,7 @@
 using Student.BLL.DTO;
 using Student.BLL.Infrastructure;
 using Student.BLL.Interfaces;
+using Student.DAL.EF;
 using Student.DAL.Entities;
 using Student.DAL.Interfaces;
 using System;
@@ -16,15 +17,17 @@ namespace Student.BLL.Services
     public class UserService : IUserService
     {
         IUnitOfWork Database { get; set; }
-
+        EFDbContext LessonContext;
         public UserService(IUnitOfWork uow)
         {
             Database = uow;
+            LessonContext = new EFDbContext("DefaultConnection1");
         }
 
         public async Task<OperationDetails> Create(UserDTO userDto)
         {
             ApplicationUser user = await Database.UserManager.FindByEmailAsync(userDto.Email);
+            
             if (user == null)
             {
                 user = new ApplicationUser { Email = userDto.Email, UserName = userDto.Email };
@@ -35,6 +38,9 @@ namespace Student.BLL.Services
                 await Database.UserManager.AddToRoleAsync(user.Id, userDto.Role);
                 // создаем профиль клиента
                 ClientProfile clientProfile = new ClientProfile { Id = user.Id, Address = userDto.Address, Name = userDto.Name, StudentGroupId = userDto.StudentGroupId };
+                Students Stud = new Students { Id = user.Id, GroupId = userDto.StudentGroupId };
+                LessonContext.Students.Add(Stud);
+                LessonContext.SaveChanges();
                 Database.ClientManager.Create(clientProfile);
                 await Database.SaveAsync();
                 return new OperationDetails(true, "Success", "");

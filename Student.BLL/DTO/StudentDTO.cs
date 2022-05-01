@@ -2,7 +2,7 @@
 {
     public class StudentDTO
     {
-        public int StudentId;
+        public string StudentId;
 
         public int Groupid;
     }

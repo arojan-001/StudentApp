@@ -19,6 +19,10 @@ namespace Student.BLL.Services
         {
             return new StudentGroupService(new StudentGroupRepository(connection));
         }
+        public IStudentService CreateStudentService(string connection)
+        {
+            return new StudentService(new StudentRepository(connection));
+        }
 
         public ILessonService CreateLessonService(string connection)
         {

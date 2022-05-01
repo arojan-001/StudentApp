@@ -38,10 +38,16 @@ namespace Student.DAL.EF
         public DbSet<Lesson> Lessons { get; set; }
 
         public DbSet<GroupLesson> GroupLessons { get; set; }
+        
+        public DbSet<Students> Students { get; set; }
 
         public DbSet<Exam> Exams { get; set; }
 
-       // public DbSet<Exams> Exam { get; set; }
+        //public DbSet<Exams> Exam { get; set; }
+        public DbSet<QuestionBank> QuestionBanks { get; set; }
+        public DbSet<Options> Options { get; set; }
+
+        public DbSet<ExamResult> ExamResults { get; set; }
 
         public DbSet<Evaluation> Evaluations { get; set; }
 

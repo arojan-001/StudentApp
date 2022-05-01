@@ -7,28 +7,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Student.DAL.Entities
-{//Not Use, use Exam
-    public class Exams : ModelBase
+{
+    public class Students : ModelBase
     {
         [Key]
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [ForeignKey("StudentGroup")]
         public int GroupId { get; set; }
 
-        [ForeignKey("Lesson")]
-        public int LessonId { get; set; }
-
-        public DateTime ExamDate { get; set; }
-
-        public int Duration { get; set; }
-
-        public int FullMark { get; set; }
-
-        public DateTime Created { get; set; }
-
         public StudentGroup StudentGroup { get; set; }
-
-        public Lesson Lesson { get; set; }
     }
 }

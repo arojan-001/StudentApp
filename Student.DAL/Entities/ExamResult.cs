@@ -8,15 +8,24 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Student.DAL.Entities
 {
-    class ExamResult :ModelBase
+    public class ExamResult :ModelBase
     {   
+        [Key]
         public int Id { get; set; }
 
-        [ForeignKey("Student")]
-        public int StudentId { get; set; }
-
+        [ForeignKey("Students")]
+        public string StudentId { get; set; }
+        
         [ForeignKey("QuestionBank")]
         public int QuestionId { get; set; }
+
+        public int StudentAnswer{ get; set; }
+
+        public Students Students { get; set; }
+
+        public QuestionBank QuestionBank { get; set; }
+
+
 
     }
 }
