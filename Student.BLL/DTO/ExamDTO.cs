@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Student.BLL.DTO
 {
-    class ExamsDTO
+   public class ExamDTO
     {
         public int Id { get; set; }
 
@@ -20,6 +21,6 @@ namespace Student.BLL.DTO
 
         public int FullMark { get; set; }
 
-        public DateTime Created { get; set; }
+        public DateTime? Created { get; set; }
     }
 }

@@ -14,30 +14,30 @@ namespace Student.DAL.Repositories
 
         }
 
-        public IEnumerable<Exams> GetExams()
+        public IEnumerable<Exam> GetExams()
         {
-            return GetAll<Exams>();
+            return GetAll<Exam>();
         }
 
-        public Exams GetById(int id)
+        public Exam GetById(int id)
         {
-            return GetAll<Exams>().FirstOrDefault(x => x.Id == id);
+            return GetAll<Exam>().FirstOrDefault(x => x.ExamId == id);
         }
 
-        public void SaveExam(Exams product, bool isSaveChanges = true)
+        public void SaveExam(Exam product, bool isSaveChanges = true)
         {
-            var dbProduct = Find<Exams>(product.Id);
+            var dbProduct = Find<Exam>(product.ExamId);
             if (dbProduct == null)
-                Add<Exams>(product);
+                Add<Exam>(product);
             else
                 SetValues(product, dbProduct);
             if (isSaveChanges)
                 SaveChanges();
         }
 
-        public Exams DeleteExam(int id, bool isSaveChanges = true)
+        public Exam DeleteExam(int id, bool isSaveChanges = true)
         {
-            var dbEntry = Find<Exams>(id);
+            var dbEntry = Find<Exam>(id);
             if (dbEntry != null)
             {
                 Remove(dbEntry);

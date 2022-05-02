@@ -18,6 +18,7 @@ namespace Student.WebUI.App_Start
             app.CreatePerOwinContext<IStudentGroupService>(CreateStudentGroupService);
             app.CreatePerOwinContext<IStudentService>(CreateStudentService);
             app.CreatePerOwinContext<ILessonService>(CreateLessonService);
+            app.CreatePerOwinContext<IExamService>(CreateExamService);
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
@@ -42,10 +43,10 @@ namespace Student.WebUI.App_Start
         {
             return serviceCreator.CreateLessonService("DefaultConnection1");
         }
-    //    private IExamService CreateIExamService()
-    //    {
-    //        return examCreator.CreateExamService("DefaultConnection1");
-    //    } //
-   }
+        private IExamService CreateExamService()
+        {
+            return serviceCreator.CreateExamService("DefaultConnection1");
+        } 
+    }
     
 }

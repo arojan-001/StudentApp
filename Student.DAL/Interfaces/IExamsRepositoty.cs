@@ -9,13 +9,12 @@ namespace Student.DAL.Interfaces
 {
     public interface IExamsRepositoty
     {
-        IEnumerable<Exams> GetExams();
+        IEnumerable<Exam> GetExams();
 
-        Exams GetById(int id);
+        Exam GetById(int id);
+        void SaveExam(Exam product, bool isSaveChanges = true);
 
-        void SaveExam(Exams product, bool isSaveChanges = true);
-
-        Exams DeleteExam(int productId, bool isSaveChanges = true);
+        Exam DeleteExam(int productId, bool isSaveChanges = true);
 
         void SaveChanges();
     }

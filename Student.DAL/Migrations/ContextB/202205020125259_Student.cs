@@ -30,13 +30,16 @@ namespace Student.DAL.Migrations.ContextB
                         ExamDate = c.DateTime(nullable: false),
                         Duration = c.Int(nullable: false),
                         FullMark = c.Int(nullable: false),
-                        Created = c.DateTime(nullable: false),
+                        Created = c.DateTime(),
+                        Exam_ExamId = c.Int(),
                     })
                 .PrimaryKey(t => t.ExamId)
+                .ForeignKey("dbo.Exams", t => t.Exam_ExamId)
                 .ForeignKey("dbo.Lessons", t => t.LessonId, cascadeDelete: true)
                 .ForeignKey("dbo.StudentGroup", t => t.GroupId, cascadeDelete: true)
                 .Index(t => t.GroupId)
-                .Index(t => t.LessonId);
+                .Index(t => t.LessonId)
+                .Index(t => t.Exam_ExamId);
             
             CreateTable(
                 "dbo.Lessons",
@@ -84,7 +87,7 @@ namespace Student.DAL.Migrations.ContextB
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.QuestionBanks", t => t.QuestionId, cascadeDelete: true)
-                .ForeignKey("dbo.Students", t => t.StudentId)
+                .ForeignKey("dbo.Student", t => t.StudentId)
                 .Index(t => t.StudentId)
                 .Index(t => t.QuestionId);
             
@@ -102,15 +105,13 @@ namespace Student.DAL.Migrations.ContextB
                 .Index(t => t.ExamId);
             
             CreateTable(
-                "dbo.Students",
+                "dbo.Student",
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
                         GroupId = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.StudentGroup", t => t.GroupId, cascadeDelete: true)
-                .Index(t => t.GroupId);
+                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "dbo.Options",
@@ -130,8 +131,7 @@ namespace Student.DAL.Migrations.ContextB
         public override void Down()
         {
             DropForeignKey("dbo.Options", "QuestionId", "dbo.QuestionBanks");
-            DropForeignKey("dbo.ExamResults", "StudentId", "dbo.Students");
-            DropForeignKey("dbo.Students", "GroupId", "dbo.StudentGroup");
+            DropForeignKey("dbo.ExamResults", "StudentId", "dbo.Student");
             DropForeignKey("dbo.ExamResults", "QuestionId", "dbo.QuestionBanks");
             DropForeignKey("dbo.QuestionBanks", "ExamId", "dbo.Exams");
             DropForeignKey("dbo.Evaluations", "ExamId", "dbo.Exams");
@@ -140,19 +140,20 @@ namespace Student.DAL.Migrations.ContextB
             DropForeignKey("dbo.GroupLessons", "LessonId", "dbo.Lessons");
             DropForeignKey("dbo.Exams", "LessonId", "dbo.Lessons");
             DropForeignKey("dbo.Lessons", "Lesson_LessonId", "dbo.Lessons");
+            DropForeignKey("dbo.Exams", "Exam_ExamId", "dbo.Exams");
             DropIndex("dbo.Options", new[] { "QuestionId" });
-            DropIndex("dbo.Students", new[] { "GroupId" });
             DropIndex("dbo.QuestionBanks", new[] { "ExamId" });
             DropIndex("dbo.ExamResults", new[] { "QuestionId" });
             DropIndex("dbo.ExamResults", new[] { "StudentId" });
             DropIndex("dbo.GroupLessons", new[] { "LessonId" });
             DropIndex("dbo.GroupLessons", new[] { "GroupId" });
             DropIndex("dbo.Lessons", new[] { "Lesson_LessonId" });
+            DropIndex("dbo.Exams", new[] { "Exam_ExamId" });
             DropIndex("dbo.Exams", new[] { "LessonId" });
             DropIndex("dbo.Exams", new[] { "GroupId" });
             DropIndex("dbo.Evaluations", new[] { "ExamId" });
             DropTable("dbo.Options");
-            DropTable("dbo.Students");
+            DropTable("dbo.Student");
             DropTable("dbo.QuestionBanks");
             DropTable("dbo.ExamResults");
             DropTable("dbo.GroupLessons");

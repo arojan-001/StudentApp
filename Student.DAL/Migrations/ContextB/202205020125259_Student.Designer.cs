@@ -13,7 +13,7 @@ namespace Student.DAL.Migrations.ContextB
         
         string IMigrationMetadata.Id
         {
-            get { return "202204302323170_Student"; }
+            get { return "202205020125259_Student"; }
         }
         
         string IMigrationMetadata.Source

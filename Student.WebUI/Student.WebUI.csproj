@@ -178,6 +178,7 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ExamController.cs" />
     <Compile Include="Controllers\GroupController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LessonController.cs" />
@@ -186,6 +187,7 @@
     </Compile>
     <Compile Include="Models\Averages.cs" />
     <Compile Include="Models\BaseViewModel.cs" />
+    <Compile Include="Models\ExamViewModel.cs" />
     <Compile Include="Models\LessonsViewModel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
@@ -246,9 +248,11 @@
     <Content Include="Views\Lesson\AddExam.cshtml" />
     <Content Include="Views\Lesson\AddEvaluation.cshtml" />
     <Content Include="Views\Lesson\Averages.cshtml" />
+    <Content Include="Views\Exam\addExam.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

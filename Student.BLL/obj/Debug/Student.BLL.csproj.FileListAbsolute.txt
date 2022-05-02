@@ -54,3 +54,11 @@ C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\obj\Debu
 C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\obj\Debug\Student.BLL.csproj.CopyComplete
 C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\obj\Debug\Student.BLL.dll
 C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\obj\Debug\Student.BLL.pdb
+C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\bin\Debug\Castle.Core.dll
+C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\bin\Debug\Moq.dll
+C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\bin\Debug\Castle.Core.xml
+C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\bin\Debug\Moq.xml
+C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Home\OneDrive\Документы\GitHub\StudentApp\Student.BLL\bin\Debug\System.Threading.Tasks.Extensions.xml

@@ -15,5 +15,7 @@ namespace Student.BLL.Interfaces
 
         ILessonService CreateLessonService(string connection);
 
+        IExamService CreateExamService(string connection);
+
     }
 }

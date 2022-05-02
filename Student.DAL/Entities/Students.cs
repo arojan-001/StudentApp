@@ -8,14 +8,13 @@ using System.Threading.Tasks;
 
 namespace Student.DAL.Entities
 {
+    [Table("Student")]
     public class Students : ModelBase
     {
         [Key]
         public string Id { get; set; }
 
-        [ForeignKey("StudentGroup")]
         public int GroupId { get; set; }
 
-        public StudentGroup StudentGroup { get; set; }
     }
 }

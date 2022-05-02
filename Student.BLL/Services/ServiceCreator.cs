@@ -28,5 +28,10 @@ namespace Student.BLL.Services
         {
             return new LessonService(new LessonRepository(connection));
         }
+
+        public IExamService CreateExamService(string connection)
+        {
+            return new ExamService(new ExamsRepository(connection));
+        }
     }
 }

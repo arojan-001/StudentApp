@@ -24,13 +24,15 @@ namespace Student.DAL.Entities
         public int Duration { get; set; }
 
         public int FullMark { get; set; }
-
-        public DateTime Created { get; set; }
+     //   [Required, DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        public DateTime? Created { get; set; }
 
         public ICollection<Evaluation> Evaluations { get; set; }
 
         public StudentGroup StudentGroup { get; set; }
 
         public Lesson Lesson { get; set; }
+
+        public ICollection<Exam> Exams { get; set; }
     }
 }
