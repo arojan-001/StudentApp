@@ -32,7 +32,14 @@ namespace Student.WebUI.Controllers
             {
                 return HttpContext.GetOwinContext().GetUserManager<ILessonService>();
             }
-        } 
+        }
+
+        public ViewResult Index()
+        {
+            return View(ExamService.GetAll());
+        }
+
+        [Authorize(Roles = "admin")]
         [HttpGet]
         public ViewResult addExam()
         {
@@ -88,19 +95,30 @@ namespace Student.WebUI.Controllers
                 return View(model);
             }
         }
-        //[HttpGet]
-        //public ActionResult AddExam()
-        //{
-        //    ViewBag.Groups = LessonContext.StudentGroups.ToList();
-        //    ViewBag.Lessons = LessonContext.Lessons.ToList();
-        //    return View();
-        //}
-        //[HttpPost]
-        //public ActionResult AddExam(Exam exam)
-        //{
-        //    LessonContext.Exams.Add(exam);
-        //    LessonContext.SaveChanges();
-        //    return RedirectToAction("Index", "Lesson");
-        //}
+
+
+        [Authorize(Roles = "admin")]
+        [HttpGet]
+        public ViewResult AddQuestion()
+        {
+            ViewBag.Groups = StudentGroupService.GetAll();
+            ViewBag.Lessons = LessonService.GetAll();
+            return View(new ExamViewModel());
+        }
+        [HttpPost]
+        public ActionResult AddQuestion(ExamViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var op = ExamService.Create(new BLL.DTO.ExamDTO() { Id = model.Id, /*Created = DateTime.Now,*/ Duration = model.Duration, ExamDate = model.ExamDate, FullMark = model.FullMark, GroupId = model.GroupId, LessonId = model.LessonId });
+                TempData["message"] = string.Format("{0} has been saved", op.Message);
+                return RedirectToAction("Index", "Admin");
+            }
+            else
+            {
+                // there is something wrong with the data values
+                return View(model);
+            }
+        }
     }
 }

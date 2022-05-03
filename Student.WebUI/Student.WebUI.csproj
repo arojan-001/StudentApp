@@ -249,10 +249,10 @@
     <Content Include="Views\Lesson\AddEvaluation.cshtml" />
     <Content Include="Views\Lesson\Averages.cshtml" />
     <Content Include="Views\Exam\addExam.cshtml" />
+    <Content Include="Views\Exam\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

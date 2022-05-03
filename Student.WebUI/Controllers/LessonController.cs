@@ -83,7 +83,7 @@ namespace Student.WebUI.Controllers
         {
             ViewBag.Groups = LessonContext.StudentGroups.ToList();
             ViewBag.Lessons = LessonContext.Lessons.ToList();
-            return View();
+            return RedirectToAction("addExam", "Exam");//View();
         }
         [HttpPost]
         public ActionResult AddExam(Exam exam)

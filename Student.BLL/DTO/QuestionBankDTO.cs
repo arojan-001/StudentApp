@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Student.BLL.DTO
 {
-    class QuestionBankDTO
+    public class QuestionBankDTO
     {
         public int Id { get; set; }
 

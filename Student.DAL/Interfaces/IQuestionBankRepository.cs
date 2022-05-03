@@ -8,7 +8,7 @@ namespace Student.DAL.Interfaces
 {
     public interface IQuestionBankRepository
     {
-        IEnumerable<QuestionBank> GetQuestion();
+        IEnumerable<QuestionBank> GetQuestions();
 
         QuestionBank GetById(int id);
 

@@ -12,6 +12,9 @@ namespace Student.DAL.Interfaces
         IEnumerable<Exam> GetExams();
 
         Exam GetById(int id);
+
+        IEnumerable<Exam> GetByGroupId(int id);
+
         void SaveExam(Exam product, bool isSaveChanges = true);
 
         Exam DeleteExam(int productId, bool isSaveChanges = true);

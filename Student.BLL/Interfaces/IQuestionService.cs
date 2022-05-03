@@ -9,17 +9,13 @@ using System.Threading.Tasks;
 
 namespace Student.BLL.Interfaces
 {
-    public interface IExamService : IDisposable
+    public interface IQuestionService : IDisposable
     {
-        OperationDetails Create(ExamDTO examDTO);
+        OperationDetails Create(QuestionBankDTO questionDTO);
+        List<QuestionBankDTO> GetAll();
 
-        List<ExamDTO> GetAll();
+        QuestionBankDTO Delete(int id);
 
-        ExamDTO Delete(int id);
-
-        ExamDTO GetById(int id);
-
-        List<ExamDTO> GetbyGroupId(int groupid);
-
+        QuestionBankDTO GetById(int id);
     }
 }

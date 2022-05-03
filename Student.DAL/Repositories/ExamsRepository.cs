@@ -24,6 +24,11 @@ namespace Student.DAL.Repositories
             return GetAll<Exam>().FirstOrDefault(x => x.ExamId == id);
         }
 
+        public IEnumerable<Exam> GetByGroupId(int id)
+        {
+            return GetAll<Exam>().Where(x => x.GroupId == id);
+        }
+
         public void SaveExam(Exam product, bool isSaveChanges = true)
         {
             var dbProduct = Find<Exam>(product.ExamId);

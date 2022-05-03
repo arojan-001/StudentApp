@@ -14,7 +14,7 @@ namespace Student.DAL.Repositories
 
         }
 
-        public IEnumerable<QuestionBank> GetQuestion()
+        public IEnumerable<QuestionBank> GetQuestions()
         {
             return GetAll<QuestionBank>();
         }

@@ -47,6 +47,16 @@ namespace Student.BLL.Services
             }
             return examDTO;
         }
+        public List<ExamDTO> GetbyGroupId(int groupid)
+        {
+            var exam = Database.GetByGroupId(groupid);
+            List<ExamDTO> examDTO = new List<ExamDTO>();
+            foreach (var item in exam)
+            {
+                examDTO.Add(new ExamDTO() { Id = item.ExamId, LessonId = item.LessonId, GroupId = item.GroupId, Duration = item.Duration, FullMark = item.FullMark, /*Created = item.Created,*/ ExamDate = item.ExamDate });
+            }
+            return examDTO;
+        }
 
         public ExamDTO Delete(int id)
         {

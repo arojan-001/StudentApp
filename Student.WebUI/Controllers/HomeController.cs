@@ -1,4 +1,6 @@
-﻿using Student.DAL.EF;
+﻿using Microsoft.AspNet.Identity.Owin;
+using Student.BLL.Interfaces;
+using Student.DAL.EF;
 using Student.WebUI.Models;
 using System;
 using System.Collections.Generic;
@@ -11,21 +13,34 @@ namespace Student.WebUI.Controllers
     public class HomeController : Controller
     {
         EFDbContext LessonContext;
-
-        ApplicationContext ClientContext { get; }
-
+        private IExamService ExamService
+        {
+            get
+            {
+                return HttpContext.GetOwinContext().GetUserManager<IExamService>();
+            }
+        }
+        private IStudentService StudentService
+        {
+            get
+            {
+                return HttpContext.GetOwinContext().GetUserManager<IStudentService>();
+            }
+        }
         public HomeController()
         {
             LessonContext = new EFDbContext("DefaultConnection1");
-            ClientContext = new ApplicationContext("DefaultConnection");
         }
         public ActionResult Index(string UserId)
-        {
+        { 
+            var q = ExamService.GetbyGroupId(StudentService.GetById(UserId).Groupid);
+
             var evals = from u in LessonContext.Evaluations.Where(p => p.UserId == UserId)
                         join c in LessonContext.Exams on u.ExamId equals c.ExamId
                         join l in LessonContext.Lessons on c.LessonId equals l.LessonId
                         select new StudentViewModel { Date = c.ExamDate, Lesson = l.Name, Value = u.Value };
 
+            ViewBag.Exams = q; 
             //IQueryable<Guid> ExamIds = Enumerable.Empty<Guid>().AsQueryable();
             //var evals = from u in ClientContext.ClientProfiles.Where(p => p.Id == UserId)
             //            join sg in LessonContext.GroupLessons on u.StudentGroupId equals sg.GroupId
