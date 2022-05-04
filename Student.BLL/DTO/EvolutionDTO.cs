@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Student.BLL.DTO
 {
-    class EvolutionDTO
+    public class EvolutionDTO
     {
 
         public int EvaluationId { get; set; }

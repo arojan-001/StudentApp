@@ -19,6 +19,11 @@ namespace Student.DAL.Repositories
             return GetAll<QuestionBank>();
         }
 
+        public List<QuestionBank> GetAllQuestions()
+        {
+            return GetAll<QuestionBank>().ToList();
+        }
+
         public QuestionBank GetById(int id)
         {
             return GetAll<QuestionBank>().FirstOrDefault(x => x.Id == id);
@@ -51,5 +56,11 @@ namespace Student.DAL.Repositories
         {
             db.SaveChanges();
         }
+
+        public IEnumerable<QuestionBank> GetByExamId(int id)
+        {
+            return GetAll<QuestionBank>().Where(x => x.ExamId == id);
+        }
+
     }
 }

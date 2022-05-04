@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Student.BLL.DTO
 {
-    class OptionsDTO
+    public class OptionsDTO
     {
         public int Id;
 
-        public int ExamId;
+        public int QuestionId;
 
         public string Answer;
 

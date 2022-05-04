@@ -61,6 +61,11 @@ namespace Student.BLL.Services
 
             return new QuestionBankDTO() { Id = qns.Id, Mark = qns.Mark, ExamId = qns.ExamId, Question = qns.Question };
         }
+        public int GetQuestionOrder()
+        {
+            var order = Database.GetAllQuestions().Count;
+            return order;
+        }
 
         public void Dispose()
         {

@@ -10,7 +10,10 @@ namespace Student.DAL.Interfaces
     {
         IEnumerable<QuestionBank> GetQuestions();
 
+        List<QuestionBank> GetAllQuestions();
         QuestionBank GetById(int id);
+
+        IEnumerable<QuestionBank> GetByExamId(int id);
 
         void SaveQuestion(QuestionBank product, bool isSaveChanges = true);
 

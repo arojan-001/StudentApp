@@ -182,6 +182,7 @@
     <Compile Include="Controllers\GroupController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LessonController.cs" />
+    <Compile Include="Controllers\QuestionBankController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -250,6 +251,8 @@
     <Content Include="Views\Lesson\Averages.cshtml" />
     <Content Include="Views\Exam\addExam.cshtml" />
     <Content Include="Views\Exam\Index.cshtml" />
+    <Content Include="Views\QuestionBank\AddQuestion.cshtml" />
+    <Content Include="Views\QuestionBank\AddOption.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

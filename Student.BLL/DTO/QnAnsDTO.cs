@@ -8,7 +8,7 @@ namespace Student.BLL.DTO
 {
     public class QnAnsDTO
     {
-        QuestionBankDTO question;
-        List<OptionsDTO> options;
+        public QuestionBankDTO question { get; set; }
+        public List<OptionsDTO> options { get; set; }
     }
 }

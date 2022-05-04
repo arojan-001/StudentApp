@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Student.BLL.DTO
 {
-    class ExamQnsDTO
+   public class ExamQnsDTO
     {
         ExamDTO exam;
         List<QnAnsDTO> qnAns;

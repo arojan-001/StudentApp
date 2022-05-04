@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Student.BLL.DTO
 {
-    class ExamResultDTO
+    public class ExamResultDTO
     {
         public int Id;
 
