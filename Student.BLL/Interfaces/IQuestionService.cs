@@ -17,5 +17,7 @@ namespace Student.BLL.Interfaces
         QuestionBankDTO Delete(int id);
 
         QuestionBankDTO GetById(int id);
+
+        List<QuestionBankDTO> GetByExamId(int id);
     }
 }

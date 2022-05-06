@@ -33,5 +33,14 @@ namespace Student.BLL.Services
         {
             return new ExamService(new ExamsRepository(connection));
         }
+        public IQuestionService CreateQuestionService(string connection)
+        {
+            return new QuestionService(new QuestionBankRepository(connection));
+        }
+        public IOptionsService CreateOptionsService(string connection)
+        {
+            return new OptionsService(new OptionsRepository(connection));
+        }
+
     }
 }

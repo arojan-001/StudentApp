@@ -8,12 +8,17 @@ namespace Student.BLL.DTO
 {
     public class OptionsDTO
     {
-        public int Id;
+        public int Id { get; set; }
 
-        public int QuestionId;
+        public int QuestionId { get; set; }
 
-        public string Answer;
+        public string Answer { get; set; }
 
-        public int Correct_Answer;
+        public int Correct_Answer { get; set; }
+        public bool BoolValue
+        {
+            get { return Correct_Answer == 1; }
+            set { Correct_Answer = value ? 1 : 0; }
+        }
     }
 }

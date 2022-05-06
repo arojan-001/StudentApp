@@ -11,7 +11,7 @@ namespace Student.BLL.Interfaces
 {
     public interface IOptionsService : IDisposable
     {
-        OperationDetails Create(OptionsDTO questionDTO);
+        OperationDetails Create(OptionsDTO optionDTO);
         List<OptionsDTO> GetAll();
         List<OptionsDTO> GetbyQuestionid(int id);
         OptionsDTO Delete(int id);

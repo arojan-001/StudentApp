@@ -11,7 +11,7 @@ namespace Student.DAL.Entities
     public class Exam : ModelBase
     {
         [Key]
-        public int ExamId { get; set; }
+        public int Id { get; set; }
 
         [ForeignKey("StudentGroup")]
         public int GroupId { get; set; }
@@ -27,12 +27,12 @@ namespace Student.DAL.Entities
      //   [Required, DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime? Created { get; set; }
 
-        public ICollection<Evaluation> Evaluations { get; set; }
+       // public ICollection<Evaluation> Evaluations { get; set; }
 
         public StudentGroup StudentGroup { get; set; }
 
         public Lesson Lesson { get; set; }
 
-        public ICollection<Exam> Exams { get; set; }
+       // public ICollection<Exam> Exams { get; set; }
     }
 }

@@ -16,19 +16,27 @@
                 <th>Group</th>
                 <th>Lesson</th>
                 <th>Date</th>
+                <th>Duration</th>
+                <th>Full Mark</th>
             </tr>
             @foreach (var item in Model)
             {
-                <tr>
-                    <td class="text-right">@item.Id</td>
-                    <td>@item.GroupId</td>
-                    <td>@item.LessonId</td>
-                    <td>@item.ExamDate.ToString("dd/MM/yyyy hh:m")</td>
-                    <td>@item.Duration</td>
-                    <td>@item.FullMark</td>
-                    @*<td class="text-right">@item.LessonId</td>
-                        <td class="text-right">@item.Name</td>*@
-                </tr>
+        <tr>
+            <td class="text-right">@item.Id</td>
+            <td>@item.GroupId</td>
+            <td>@item.LessonId</td>
+            <td>@item.ExamDate.ToString("dd/MM/yyyy hh:mm")</td>
+            <td>@item.Duration</td>
+            <td>@item.FullMark</td>
+            <td>
+                @Html.ActionLink("View Questions", "Index", "QuestionBank", new { examid = item.Id }, new { @class = "btn btn-default  btn-xs" })
+            </td>
+            <td>
+                @Html.ActionLink("Add Questions", "AddQuestion", "QuestionBank", new { examid = item.Id }, new { @class = "btn btn-default  btn-xs" })
+            </td>
+            @*<td class="text-right">@item.LessonId</td>
+        <td class="text-right">@item.Name</td>*@
+        </tr>
             }
         </table>
     </div>

@@ -26,13 +26,13 @@ namespace Student.BLL.Services
 
             if (exam == null)
             {
-                exam = new Exam { ExamId = examDto.Id, LessonId = examDto.LessonId, GroupId = examDto.GroupId, Duration = examDto.Duration, FullMark= examDto.FullMark, /*Created = DateTime.Now,*/ ExamDate= examDto.ExamDate };
+                exam = new Exam { Id = examDto.Id, LessonId = examDto.LessonId, GroupId = examDto.GroupId, Duration = examDto.Duration, FullMark= examDto.FullMark, /*Created = DateTime.Now,*/ ExamDate= examDto.ExamDate };
                 Database.SaveExam(exam);
                 return new OperationDetails(true, "Success ", "");
             }
             else
             {
-                Database.SaveExam(new Exam() { ExamId = examDto.Id, LessonId = examDto.LessonId, GroupId = examDto.GroupId, Duration = examDto.Duration, FullMark = examDto.FullMark, /*Created = DateTime.Now,*/ ExamDate = examDto.ExamDate });
+                Database.SaveExam(new Exam() { Id = examDto.Id, LessonId = examDto.LessonId, GroupId = examDto.GroupId, Duration = examDto.Duration, FullMark = examDto.FullMark, /*Created = DateTime.Now,*/ ExamDate = examDto.ExamDate });
                 return new OperationDetails(true, "Success ", "");
             }
         }
@@ -43,7 +43,7 @@ namespace Student.BLL.Services
             List<ExamDTO> examDTO = new List<ExamDTO>();
             foreach (var item in exam)
             {
-                examDTO.Add(new ExamDTO() { Id = item.ExamId, LessonId = item.LessonId, GroupId = item.GroupId, Duration = item.Duration, FullMark = item.FullMark, /*Created = item.Created,*/ ExamDate = item.ExamDate });
+                examDTO.Add(new ExamDTO() { Id = item.Id, LessonId = item.LessonId, GroupId = item.GroupId, Duration = item.Duration, FullMark = item.FullMark, /*Created = item.Created,*/ ExamDate = item.ExamDate });
             }
             return examDTO;
         }
@@ -53,7 +53,7 @@ namespace Student.BLL.Services
             List<ExamDTO> examDTO = new List<ExamDTO>();
             foreach (var item in exam)
             {
-                examDTO.Add(new ExamDTO() { Id = item.ExamId, LessonId = item.LessonId, GroupId = item.GroupId, Duration = item.Duration, FullMark = item.FullMark, /*Created = item.Created,*/ ExamDate = item.ExamDate });
+                examDTO.Add(new ExamDTO() { Id = item.Id, LessonId = item.LessonId, GroupId = item.GroupId, Duration = item.Duration, FullMark = item.FullMark, /*Created = item.Created,*/ ExamDate = item.ExamDate });
             }
             return examDTO;
         }
@@ -62,14 +62,14 @@ namespace Student.BLL.Services
         {
             var exam = Database.DeleteExam(id);
 
-            return new ExamDTO() { Id = exam.ExamId, LessonId = exam.LessonId, GroupId = exam.GroupId, Duration = exam.Duration, FullMark = exam.FullMark, /*Created = exam.Created,*/ ExamDate = exam.ExamDate };
+            return new ExamDTO() { Id = exam.Id, LessonId = exam.LessonId, GroupId = exam.GroupId, Duration = exam.Duration, FullMark = exam.FullMark, /*Created = exam.Created,*/ ExamDate = exam.ExamDate };
         }
 
         public ExamDTO GetById(int id)
         {
             var exam = Database.GetById(id);
 
-            return new ExamDTO() { Id = exam.ExamId, LessonId = exam.LessonId, GroupId = exam.GroupId, Duration = exam.Duration, FullMark = exam.FullMark, /*Created = exam.Created,*/ ExamDate = exam.ExamDate };
+            return new ExamDTO() { Id = exam.Id, LessonId = exam.LessonId, GroupId = exam.GroupId, Duration = exam.Duration, FullMark = exam.FullMark, /*Created = exam.Created,*/ ExamDate = exam.ExamDate };
         }
 
         public void Dispose()

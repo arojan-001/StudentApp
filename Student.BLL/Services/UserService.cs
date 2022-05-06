@@ -38,10 +38,12 @@ namespace Student.BLL.Services
                 await Database.UserManager.AddToRoleAsync(user.Id, userDto.Role);
                 // создаем профиль клиента
                 ClientProfile clientProfile = new ClientProfile { Id = user.Id, Address = userDto.Address, Name = userDto.Name, StudentGroupId = userDto.StudentGroupId };
-                Students Stud = new Students { Id = user.Id, GroupId = userDto.StudentGroupId };
-                LessonContext.Students.Add(Stud);
-                LessonContext.SaveChanges();
-                Database.ClientManager.Create(clientProfile);
+                if (userDto.Role == "user") {
+                    Students Stud = new Students { Id = user.Id, GroupId = userDto.StudentGroupId };
+                    LessonContext.Students.Add(Stud);
+                    LessonContext.SaveChanges();
+                }
+                    Database.ClientManager.Create(clientProfile);
                 await Database.SaveAsync();
                 return new OperationDetails(true, "Success", "");
             }

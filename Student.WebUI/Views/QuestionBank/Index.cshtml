@@ -1,0 +1,37 @@
+﻿@model List<Student.BLL.DTO.QuestionBankDTO>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div>All Questions</div>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-condensed table-bordered">
+            <tr>
+                <th class="text-right">QuestionId</th>
+                <th>Mark</th>
+                <th>Question</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-right">@item.Id</td>
+                    <td>@item.Mark</td>
+                    <td>@item.Question</td>
+
+                    <td>
+                        @Html.ActionLink("Add Option", "AddOption", "QuestionBank", new { questionid = item.Id }, new { @class = "btn btn-default  btn-xs" })
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="panel-footer">
+        @Html.ActionLink("Add a New Question", "AddQuestion", "QuestionBank", null,
+            new { @class = "btn btn-default" })
+    </div>
+</div>

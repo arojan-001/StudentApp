@@ -21,5 +21,7 @@ namespace Student.DAL.Entities
         public String Question { get; set; }
 
         public Exam Exam { get; set; }
+
+       // public ICollection<QuestionBank> Questions { get; set; }
     }
 }

@@ -82,9 +82,9 @@
     <Compile Include="Interfaces\IStudentRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IGroupLessonRepository.cs" />
-    <Compile Include="Migrations\ContextB\202205020125259_Student.cs" />
-    <Compile Include="Migrations\ContextB\202205020125259_Student.Designer.cs">
-      <DependentUpon>202205020125259_Student.cs</DependentUpon>
+    <Compile Include="Migrations\ContextB\202205052347339_Student1.cs" />
+    <Compile Include="Migrations\ContextB\202205052347339_Student1.Designer.cs">
+      <DependentUpon>202205052347339_Student1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ContextB\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -106,8 +106,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\ContextB\202205020125259_Student.resx">
-      <DependentUpon>202205020125259_Student.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\ContextB\202205052347339_Student1.resx">
+      <DependentUpon>202205052347339_Student1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

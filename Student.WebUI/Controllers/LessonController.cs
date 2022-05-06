@@ -115,7 +115,7 @@ namespace Student.WebUI.Controllers
         public ActionResult Averages(string Userid, int GroupId)
         {
             var evals = from u in LessonContext.Evaluations.Where(p => p.UserId == Userid)
-                        join c in LessonContext.Exams on u.ExamId equals c.ExamId
+                        join c in LessonContext.Exams on u.ExamId equals c.Id
                         join l in LessonContext.Lessons on c.LessonId equals l.LessonId
                         select new StudentViewModel { Date = c.ExamDate, Lesson = l.Name, Value = u.Value };
             ViewBag.Userid = Userid;
@@ -129,8 +129,8 @@ namespace Student.WebUI.Controllers
             double a = 0;
             var evals =  LessonContext.Evaluations.Where(p => p.UserId == averages.UserId).ToList();
             var exams = LessonContext.Exams.ToList();
-            exams = exams.Where(p => evals.Any(t => t.ExamId == p.ExamId) && p.ExamDate <= averages.date2 && p.ExamDate >= averages.date1).ToList();
-            evals = evals.Where(p => exams.Any(t => t.ExamId == p.ExamId)).ToList();
+            exams = exams.Where(p => evals.Any(t => t.ExamId == p.Id) && p.ExamDate <= averages.date2 && p.ExamDate >= averages.date1).ToList();
+            evals = evals.Where(p => exams.Any(t => t.Id == p.ExamId)).ToList();
             if (evals.Count != 0)
             {
                 a = evals.Average(p => p.Value) / evals.Count;
@@ -138,7 +138,7 @@ namespace Student.WebUI.Controllers
             ViewBag.avg = a.ToString();
 
             var evals1 = from u in LessonContext.Evaluations.Where(p => p.UserId == averages.UserId)
-                        join c in LessonContext.Exams on u.ExamId equals c.ExamId
+                        join c in LessonContext.Exams on u.ExamId equals c.Id
                         join l in LessonContext.Lessons on c.LessonId equals l.LessonId
                         select new StudentViewModel { Date = c.ExamDate, Lesson = l.Name, Value = u.Value };
             ViewBag.Evals = evals1.ToList();

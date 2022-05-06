@@ -21,7 +21,7 @@ namespace Student.DAL.Repositories
 
         public Exam GetById(int id)
         {
-            return GetAll<Exam>().FirstOrDefault(x => x.ExamId == id);
+            return GetAll<Exam>().FirstOrDefault(x => x.Id == id);
         }
 
         public IEnumerable<Exam> GetByGroupId(int id)
@@ -31,7 +31,7 @@ namespace Student.DAL.Repositories
 
         public void SaveExam(Exam product, bool isSaveChanges = true)
         {
-            var dbProduct = Find<Exam>(product.ExamId);
+            var dbProduct = Find<Exam>(product.Id);
             if (dbProduct == null)
                 Add<Exam>(product);
             else

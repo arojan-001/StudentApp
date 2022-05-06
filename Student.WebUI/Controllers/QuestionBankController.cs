@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNet.Identity.Owin;
 using Student.BLL.DTO;
 using Student.BLL.Interfaces;
-using Student.WebUI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +11,7 @@ namespace Student.WebUI.Controllers
 {
     public class QuestionBankController : Controller
     {
+
         private IQuestionService QuestionService
         {  get {return HttpContext.GetOwinContext().GetUserManager<IQuestionService>();}}
         private IOptionsService OptionService
@@ -19,27 +19,29 @@ namespace Student.WebUI.Controllers
         private IExamService ExamService
         { get { return HttpContext.GetOwinContext().GetUserManager<IExamService>();}}
 
-        public ViewResult Index()
+        [HttpGet]
+        public ViewResult Index(int examid)
         {
-            return View(ExamService.GetAll());
+            var id = examid;
+            return View(QuestionService.GetByExamId(id));
         }
 
         [Authorize(Roles = "admin")]
         [HttpGet]
-        public ViewResult AddQuestion()
+        public ViewResult AddQuestion(int examId)
         {
-            var model = new QnAnsDTO();
-            ViewBag.Exams = ExamService.GetAll();
+            var model = new QuestionBankDTO();
+            model.ExamId = examId;
             //ViewBag.Lessons = LessonService.GetAll();
             return View(model);
         }
         [HttpPost]
-        public ActionResult AddQuestion(QnAnsDTO model)
+        public ActionResult AddQuestion(QuestionBankDTO model)
         {
             
             if (ModelState.IsValid)
             {
-                var op = QuestionService.Create(new QuestionBankDTO() { ExamId = model.question.ExamId, Id = model.question.Id, Mark = model.question.Mark, Question = model.question.Question});
+                var op = QuestionService.Create(model);
                 TempData["message"] = string.Format("{0} has been saved", op.Message);
                 return RedirectToAction("Index", "Admin");
             }
@@ -86,9 +88,30 @@ namespace Student.WebUI.Controllers
                 return View(model);
             }
         }
+        [HttpGet]
+        public ViewResult AddOption(int questionId = 2)/*(int questionId)*/
+        {
+            var model = new OptionsDTO();
+            model.QuestionId = questionId;
+            return View(model);
+        }
+        [HttpPost]
+        public ActionResult AddOption(OptionsDTO model)
+        {
+
+            if (ModelState.IsValid)
+            {
+                var op = OptionService.Create(model);
+                TempData["message"] = string.Format("{0} has been saved", op.Message);
+                return RedirectToAction("Index", "Admin");
+            }
+            else
+            {
+                // there is something wrong with the data values
+                return View(model);
+            }
+        }
 
 
-     
-        
     }
 }

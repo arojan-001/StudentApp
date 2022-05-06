@@ -43,8 +43,8 @@ namespace Student.DAL.EF
 
         public DbSet<Exam> Exams { get; set; }
 
-        //public DbSet<Exams> Exam { get; set; }
         public DbSet<QuestionBank> QuestionBanks { get; set; }
+
         public DbSet<Options> Options { get; set; }
 
         public DbSet<ExamResult> ExamResults { get; set; }

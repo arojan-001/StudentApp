@@ -47,7 +47,7 @@
             @foreach (var item in Model.Exams)
             {
                 <tr>
-                    <td class="text-right">@item.ExamId</td>
+                    <td class="text-right">@item.Id</td>
                     <td>@item.GroupId</td>
                     <td>@(Model.Lessons.FirstOrDefault(p => p.LessonId == item.LessonId)?.Name)</td>
                     <td>@item.ExamDate.ToString("dd/MM/yyyy")</td>

@@ -36,7 +36,7 @@ namespace Student.WebUI.Controllers
             var q = ExamService.GetbyGroupId(StudentService.GetById(UserId).Groupid);
 
             var evals = from u in LessonContext.Evaluations.Where(p => p.UserId == UserId)
-                        join c in LessonContext.Exams on u.ExamId equals c.ExamId
+                        join c in LessonContext.Exams on u.ExamId equals c.Id
                         join l in LessonContext.Lessons on c.LessonId equals l.LessonId
                         select new StudentViewModel { Date = c.ExamDate, Lesson = l.Name, Value = u.Value };
 

@@ -16,6 +16,10 @@ namespace Student.BLL.Interfaces
         ILessonService CreateLessonService(string connection);
 
         IExamService CreateExamService(string connection);
+       
+        IQuestionService CreateQuestionService(string connection);
+        
+        IOptionsService CreateOptionsService(string connection);
 
     }
 }

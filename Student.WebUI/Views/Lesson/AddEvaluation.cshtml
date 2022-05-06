@@ -22,7 +22,7 @@
                 <select name="ExamId" class="form-control">
                     @foreach (var item in (List<Student.DAL.Entities.Exam>)ViewBag.Exams)
                     {
-                        <option value="@item.ExamId">@(Lessons.FirstOrDefault(p => p.LessonId == item.LessonId)?.Name) &ensp;&ensp; @item.ExamDate.ToString("dd/MM/yyyy")</option>
+                        <option value="@item.Id">@(Lessons.FirstOrDefault(p => p.LessonId == item.LessonId)?.Name) &ensp;&ensp; @item.ExamDate.ToString("dd/MM/yyyy")</option>
                     }
                 </select>
             </div>

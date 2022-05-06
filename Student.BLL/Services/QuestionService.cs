@@ -66,6 +66,16 @@ namespace Student.BLL.Services
             var order = Database.GetAllQuestions().Count;
             return order;
         }
+        public List<QuestionBankDTO> GetByExamId(int id)
+        {
+            var qns = Database.GetQuestions().Where(x=> x.ExamId == id);
+            List<QuestionBankDTO> qnsDTO = new List<QuestionBankDTO>();
+            foreach (var item in qns)
+            {
+                qnsDTO.Add(new QuestionBankDTO() { Id = item.Id, ExamId = item.ExamId, Question = item.Question, Mark = item.Mark });
+            }
+            return qnsDTO;
+        }
 
         public void Dispose()
         {

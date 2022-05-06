@@ -17,16 +17,16 @@ namespace Student.BLL.Services
 
         public OptionsService(IOptionsRepository optionsRepository)
         {
-            Database = optionsRepository;
+            Database = optionsRepository; 
         }
-
+        
         public OperationDetails Create(OptionsDTO ansDTO)
         {
             Options ans = Database.GetById(ansDTO.Id);
 
             if (ans == null)
             {
-                ans = new Options { Id = ans.Id, Answer = ans.Answer, QuestionId = ans.QuestionId, Correct_Answer = ans.Correct_Answer };
+                ans = new Options { Id = ansDTO.Id, Answer = ansDTO.Answer, QuestionId = ansDTO.QuestionId, Correct_Answer = ansDTO.Correct_Answer };
                 Database.SaveOption(ans);
                 return new OperationDetails(true, "Success ", "");
             }
