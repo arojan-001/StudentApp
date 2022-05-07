@@ -15,7 +15,7 @@ namespace Student.DAL.Interfaces
 
         IEnumerable<QuestionBank> GetByExamId(int id);
 
-        void SaveQuestion(QuestionBank product, bool isSaveChanges = true);
+        QuestionBank SaveQuestion(QuestionBank product, bool isSaveChanges = true);
 
         QuestionBank DeleteQuestion(int productId, bool isSaveChanges = true);
 

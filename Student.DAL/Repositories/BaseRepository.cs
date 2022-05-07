@@ -36,9 +36,9 @@ namespace Student.DAL.Repositories
         {
             db.Entry(dbEntity).CurrentValues.SetValues(entity);
         }
-        public void Add<TEntity>(TEntity entity) where TEntity : ModelBase
+        public TEntity Add<TEntity>(TEntity entity) where TEntity : ModelBase
         {
-            db.Set<TEntity>().Add(entity);
+          return db.Set<TEntity>().Add(entity);
         }
 
         public void Remove<TEntity>(TEntity entity) where TEntity : ModelBase

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNet.Identity.Owin;
 using Student.BLL.DTO;
 using Student.BLL.Interfaces;
+using Student.WebUI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,8 +23,17 @@ namespace Student.WebUI.Controllers
         [HttpGet]
         public ViewResult Index(int examid)
         {
+            List<QuestionAnswerViewModel> questionAnswer = new List<QuestionAnswerViewModel>();
+            
             var id = examid;
-            return View(QuestionService.GetByExamId(id));
+            
+            foreach (var item in QuestionService.GetByExamId(id))
+            {
+                var q = new QuestionAnswerViewModel(){options = OptionService.GetbyQuestionid(item.Id), question = item };
+                questionAnswer.Add(q);
+            }
+
+            return View(questionAnswer);
         }
 
         [Authorize(Roles = "admin")]

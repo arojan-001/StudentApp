@@ -9,6 +9,8 @@ namespace Student.DAL.Repositories
 {
     public class QuestionBankRepository : BaseRepository, IQuestionBankRepository
     {
+        private QuestionBank s;
+
         public QuestionBankRepository(string connectionString) : base(connectionString)
         {
 
@@ -29,15 +31,17 @@ namespace Student.DAL.Repositories
             return GetAll<QuestionBank>().FirstOrDefault(x => x.Id == id);
         }
 
-        public void SaveQuestion(QuestionBank product, bool isSaveChanges = true)
+        public QuestionBank SaveQuestion(QuestionBank product, bool isSaveChanges = true)
         {
             var dbProduct = Find<QuestionBank>(product.Id);
             if (dbProduct == null)
-                Add<QuestionBank>(product);
+               s = Add<QuestionBank>(product);
             else
                 SetValues(product, dbProduct);
             if (isSaveChanges)
                 SaveChanges();
+            return dbProduct == null? product : dbProduct;
+
         }
 
         public QuestionBank DeleteQuestion(int id, bool isSaveChanges = true)

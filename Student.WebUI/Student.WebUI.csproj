@@ -192,6 +192,7 @@
     <Compile Include="Models\ExamViewModel.cs" />
     <Compile Include="Models\LessonsViewModel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\QuestionAnswerViewModel.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Models\StudentGroupListViewModel.cs" />
     <Compile Include="Models\StudentGroupViewModel.cs" />

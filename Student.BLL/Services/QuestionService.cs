@@ -27,13 +27,13 @@ namespace Student.BLL.Services
             if (qns == null)
             {
                 qns = new QuestionBank { ExamId = qnsDto.ExamId, Mark = qnsDto.Mark, Question = qnsDto.Question };
-                Database.SaveQuestion(qns);
-                return new OperationDetails(true, "Success ", "");
+               var id = Database.SaveQuestion(qns).Id;
+                return new OperationDetails(true, "Success ", id.ToString());
             }
             else
             {
-                Database.SaveQuestion(new QuestionBank() { ExamId = qnsDto.ExamId, Mark = qnsDto.Mark, Question = qnsDto.Question });
-                return new OperationDetails(true, "Success ", "");
+               var id = Database.SaveQuestion(new QuestionBank() { ExamId = qnsDto.ExamId, Mark = qnsDto.Mark, Question = qnsDto.Question }).Id;
+                return new OperationDetails(true, "Success ", id.ToString());
             }
         }
 
