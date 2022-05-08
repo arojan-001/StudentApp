@@ -20,6 +20,6 @@ namespace Student.BLL.Interfaces
         ExamDTO GetById(int id);
 
         List<ExamDTO> GetbyGroupId(int groupid);
-
+        
     }
 }

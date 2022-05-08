@@ -22,19 +22,25 @@ namespace Student.BLL.Services
         
         public OperationDetails Create(OptionsDTO ansDTO)
         {
-            Options ans = Database.GetById(ansDTO.Id);
+            var _options = Database.GetByQuestionId(ansDTO.QuestionId);
+            if (_options.Count() < 5 || (_options.Count() == 5 && (_options.Where( (obj)=>obj.Correct_Answer> 0).Count() > 0 || ansDTO.Correct_Answer == 1)))
+            {
+                Options ans = Database.GetById(ansDTO.Id);
 
-            if (ans == null)
-            {
-                ans = new Options { Id = ansDTO.Id, Answer = ansDTO.Answer, QuestionId = ansDTO.QuestionId, Correct_Answer = ansDTO.Correct_Answer };
-                Database.SaveOption(ans);
-                return new OperationDetails(true, "Success ", "");
+                if (ans == null)
+                {
+                    ans = new Options { Id = ansDTO.Id, Answer = ansDTO.Answer, QuestionId = ansDTO.QuestionId, Correct_Answer = ansDTO.Correct_Answer };
+                    Database.SaveOption(ans);
+                    return new OperationDetails(true, "Success ", "");
+                }
+                else
+                {
+                    Database.SaveOption(new Options() { Id = ans.Id, Answer = ans.Answer, QuestionId = ans.QuestionId, Correct_Answer = ans.Correct_Answer });
+                    return new OperationDetails(true, "Success ", "");
+                }
             }
-            else
-            {
-                Database.SaveOption(new Options() { Id = ans.Id, Answer = ans.Answer, QuestionId = ans.QuestionId, Correct_Answer = ans.Correct_Answer });
-                return new OperationDetails(true, "Success ", "");
-            }
+            else 
+                return new OperationDetails(false, "failed ", "");
         }
 
         public List<OptionsDTO> GetAll()
@@ -75,6 +81,31 @@ namespace Student.BLL.Services
         {
             var order = Database.GetAllOptions().Count;
             return order;
+        }
+        public static int GetOptionsCount(int mark)
+        { int val = -1;
+            switch (mark)
+            {
+                case 1:
+                    val = 3;
+                    break;
+                case 2:
+                    val = 3;
+                    break;
+                case 3:
+                    val = 4;
+                    break;
+                case 4:
+                    val = 4;
+                    break;
+                case 5:
+                    val = 1;
+                    break;
+                default:
+                    val = -1;
+                    break;
+            }
+            return val;
         }
 
         public void Dispose()

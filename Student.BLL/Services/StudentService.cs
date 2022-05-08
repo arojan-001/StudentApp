@@ -59,7 +59,21 @@ namespace Student.BLL.Services
 
             return new StudentDTO() { StudentId = dt.Id, Groupid = dt.GroupId };
         }
-
+        public OperationDetails CreateExamResult(ExamResultDTO examResultDto)
+        {
+            ExamResult examResult = Database.GetExamResultById(examResultDto.Id);
+            if (examResult == null)
+            {
+                examResult = new ExamResult { Id = examResultDto.Id, StudentId = examResultDto.StudentId, QuestionId = examResultDto.QuestionId };
+                Database.SaveExamResult(examResult);
+                return new OperationDetails(true, "Success ", "");
+            }
+            else
+            {
+                Database.SaveExamResult(new ExamResult() { Id = examResultDto.Id, StudentId = examResultDto.StudentId, QuestionId = examResultDto.QuestionId });
+                return new OperationDetails(true, "Success ", "");
+            }
+        }
 
         public void Dispose()
         {

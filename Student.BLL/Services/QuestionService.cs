@@ -76,6 +76,10 @@ namespace Student.BLL.Services
             }
             return qnsDTO;
         }
+        public static List<int> GetMark()
+        {
+            return new List<int>(new int[] { 1, 2, 3, 4, 5 });
+        }
 
         public void Dispose()
         {

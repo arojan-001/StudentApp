@@ -84,6 +84,7 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
@@ -192,6 +193,7 @@
     <Compile Include="Models\ExamViewModel.cs" />
     <Compile Include="Models\LessonsViewModel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\QnAnsViewModel.cs" />
     <Compile Include="Models\QuestionAnswerViewModel.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Models\StudentGroupListViewModel.cs" />
@@ -257,6 +259,9 @@
     <Content Include="Views\QuestionBank\AddOption.cshtml" />
     <Content Include="Views\Options\CreateOption.cshtml" />
     <Content Include="Views\QuestionBank\Index.cshtml" />
+    <Content Include="Views\QuestionBank\AddQnAns.cshtml" />
+    <Content Include="Views\QuestionBank\_OptionsPartial.cshtml" />
+    <Content Include="Views\Exam\TakeExam.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

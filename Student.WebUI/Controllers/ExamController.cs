@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.Identity.Owin;
+using Student.BLL.DTO;
 using Student.BLL.Interfaces;
 using Student.WebUI.Models;
 using System;
@@ -31,6 +32,27 @@ namespace Student.WebUI.Controllers
             get
             {
                 return HttpContext.GetOwinContext().GetUserManager<ILessonService>();
+            }
+        }
+        private IQuestionService QuestionService
+        {
+            get
+            {
+                return HttpContext.GetOwinContext().GetUserManager<IQuestionService>();
+            }
+        }
+        private IOptionsService OptionsService
+        {
+            get
+            {
+                return HttpContext.GetOwinContext().GetUserManager<IOptionsService>();
+            }
+        }
+        private IStudentService StudentService
+        {
+            get
+            {
+                return HttpContext.GetOwinContext().GetUserManager<IStudentService>();
             }
         }
 
@@ -112,6 +134,35 @@ namespace Student.WebUI.Controllers
             {
                 var op = ExamService.Create(new BLL.DTO.ExamDTO() { Id = model.Id, /*Created = DateTime.Now,*/ Duration = model.Duration, ExamDate = model.ExamDate, FullMark = model.FullMark, GroupId = model.GroupId, LessonId = model.LessonId });
                 TempData["message"] = string.Format("{0} has been saved", op.Message);
+                return RedirectToAction("Index", "Admin");
+            }
+            else
+            {
+                // there is something wrong with the data values
+                return View(model);
+            }
+        }
+        [Authorize(Roles = "admin, user")]
+        [HttpGet]
+        public ViewResult TakeExam(int examid)
+        {
+            var QuestionAnswer= new List<QuestionAnswerViewModel>();
+            var questions = QuestionService.GetByExamId(examid);
+            foreach(var item in questions)
+            {
+                QuestionAnswer.Add(new QuestionAnswerViewModel { question = item, options = OptionsService.GetbyQuestionid(item.Id)});
+            }
+            ViewBag.QnAns = QuestionAnswer;
+            return View(new ExamResultDTO());
+        }
+        [HttpPost]
+        public ActionResult TakeExam(ExamResultDTO model)
+        {
+            
+            if (ModelState.IsValid)
+            {
+                //var op = ExamService.Create(new BLL.DTO.ExamDTO() { Id = model.Id, /*Created = DateTime.Now,*/ Duration = model.Duration, ExamDate = model.ExamDate, FullMark = model.FullMark, GroupId = model.GroupId, LessonId = model.LessonId });
+                //TempData["message"] = string.Format("{0} has been saved", op.Message);
                 return RedirectToAction("Index", "Admin");
             }
             else

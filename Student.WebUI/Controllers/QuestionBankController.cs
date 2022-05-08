@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNet.Identity.Owin;
+﻿using Microsoft.Ajax.Utilities;
+using Microsoft.AspNet.Identity.Owin;
 using Student.BLL.DTO;
 using Student.BLL.Interfaces;
+using Student.BLL.Services;
 using Student.WebUI.Models;
 using System;
 using System.Collections.Generic;
@@ -25,7 +27,7 @@ namespace Student.WebUI.Controllers
         {
             List<QuestionAnswerViewModel> questionAnswer = new List<QuestionAnswerViewModel>();
             
-            var id = examid;
+            var id = Int32.Parse(examid.ToString());
             
             foreach (var item in QuestionService.GetByExamId(id))
             {
@@ -103,6 +105,7 @@ namespace Student.WebUI.Controllers
         {
             var model = new OptionsDTO();
             model.QuestionId = questionId;
+            ViewBag.Question = QuestionService.GetById(questionId);
             return View(model);
         }
         [HttpPost]
@@ -113,7 +116,47 @@ namespace Student.WebUI.Controllers
             {
                 var op = OptionService.Create(model);
                 TempData["message"] = string.Format("{0} has been saved", op.Message);
-                return RedirectToAction("Index", "Admin");
+                var q = QuestionService.GetById(Int32.Parse(model.QuestionId.ToString()));
+
+                return RedirectToAction("Index", "QuestionBank", new {examid =  q.ExamId });
+            }
+            else
+            {
+                // there is something wrong with the data values
+                return View(model);
+            }
+        }
+        [HttpGet]
+        public ViewResult AddQnAns(int examid)
+        {
+            var model = new QnAnsViewModel();
+            model.options = new List<OptionsDTO>();
+            model.examid = examid;
+
+            for (var i = 0; i < 5; i++)
+            {
+                model.options.Add(new OptionsDTO());
+            }
+            ViewBag.Exam = ExamService.GetById(examid);
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult AddQnAns(QnAnsViewModel model)
+        {
+
+            if (ModelState.IsValid)
+            { var q = new QuestionBankDTO() { ExamId = model.examid, Id = model.id, Mark = model.mark, Question = model.question };
+                var op = QuestionService.Create(q);
+                TempData["message"] = string.Format("{0} has been saved", op.Message);
+
+                    var questionBankDTO = QuestionService.GetById(Int32.Parse(op.Property));
+                    foreach (var item in model.options)
+                        if (questionBankDTO.Id.ToString() != null && !item.Answer.IsNullOrWhiteSpace())
+                        { item.QuestionId = questionBankDTO.Id;
+                           op = OptionService.Create(item);
+                        }
+                return RedirectToAction("Index", "QuestionBank", new { examid = q.ExamId });
             }
             else
             {

@@ -63,7 +63,6 @@
     <Compile Include="Entities\Evaluation.cs" />
     <Compile Include="Entities\Exam.cs" />
     <Compile Include="Entities\ExamResult.cs" />
-    <Compile Include="Entities\Exams.cs" />
     <Compile Include="Entities\Lesson.cs" />
     <Compile Include="Entities\ModelBase.cs" />
     <Compile Include="Entities\Options.cs" />

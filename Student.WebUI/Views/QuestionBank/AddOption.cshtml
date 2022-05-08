@@ -1,10 +1,10 @@
-﻿
-@model Student.BLL.DTO.OptionsDTO
+﻿@model Student.BLL.DTO.OptionsDTO
 @{
     ViewBag.Title = "AddQuestion";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    var question = (Student.BLL.DTO.QuestionBankDTO)ViewBag.Question;
 }
-
+<h2> @question.Question </h2>
 <h3>Add new Option</h3>
 @using (Html.BeginForm())
 {
@@ -28,12 +28,14 @@
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Add" class="btn btn-default" />
-        </div>
+            <a asp-action="Index" asp-controller="QuestionBank" asp-route-examId="@question.ExamId" class="btn btn-sm btn-success"> 
+                <input type="submit" value="Add" class="btn btn-default" />
+            </a>
+</div>
     </div>
 </div>
 }
 <div>
-    @Html.ActionLink("Back to Questions", "Index", "QuestionBank")
+    @Html.ActionLink("Back to Questions", "Index", "QuestionBank",   new { examid = question.ExamId }, new { @class = "btn btn-default  btn-xs" })
 </div>
 

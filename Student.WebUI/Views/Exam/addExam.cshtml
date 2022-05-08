@@ -5,6 +5,8 @@
     ViewBag.Title = "Регистрация";
     var Groups = (List<Student.BLL.DTO.StudentGroupDTO>)ViewBag.Groups;
     var Lessons = (List<Student.BLL.DTO.LessonDTO>)ViewBag.Lessons;
+    var Fulmark = Student.BLL.Services.ExamService.GetFullMark();
+    var Duration = Student.BLL.Services.ExamService.GetDuration();
 }
 
 <h2>Add New Exam</h2>
@@ -14,40 +16,50 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.ExamDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ExamDate, new { htmlAttributes = new { @class = "form-control", placeholder = "dd/MM/yyyy" } })
+                @Html.EditorFor(model => model.ExamDate, new { htmlAttributes = new { @class = "form-control", placeholder = "dd/MM/yyyy hh:mm" } })
                 @Html.ValidationMessageFor(model => model.ExamDate, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.Duration, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Duration)
-                @Html.ValidationMessageFor(model => model.Duration, "", new { @class = "text-danger" })
+               <select name="Duration" class="form-control">
+                @foreach (var item in Duration)
+                {
+                    <option value="@item">@item</option>
+                }
+                }
+                </select>
             </div>
         </div>
 
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.FullMark, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.FullMark)
-                @Html.ValidationMessageFor(model => model.FullMark, "", new { @class = "text-danger" })
-            </div>
+                <div class="col-md-10">
+                    <select name="FullMark" class="form-control">
+                            @foreach (var item in Fulmark)
+                            {
+                                <option value="@item">@item</option>
+                            }
+                        }
+                    </select>
+                </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.GroupId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <select name="GroupId" class="form-control">
-                    @foreach (var item in Groups)
+                    @if (Groups != null)
                     {
-                        <option value="@item.Id">@item.Name</option>
+                        foreach (var item in Groups)
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
                     }
                 </select>
             </div>
@@ -57,11 +69,14 @@
             @Html.LabelFor(model => model.LessonId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <select name="LessonId" class="form-control">
-                    @foreach (var item in Lessons)
+                    @if (Groups != null)
                     {
-                        <option value="@item.LessonId">@item.Name</option>
+                        foreach (var item in Lessons)
+                        {
+                            <option value="@item.LessonId">@item.Name</option>
+                        }
                     }
-                </select>
+                    </select>
             </div>
         </div>
 

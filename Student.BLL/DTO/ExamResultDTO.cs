@@ -8,10 +8,14 @@ namespace Student.BLL.DTO
 {
     public class ExamResultDTO
     {
-        public int Id;
+        public int Id { get; set; }
 
-        public int StudentId;
+        public string StudentId { get; set; }
 
-        public int QuestionId;
+        public int QuestionId { get; set; }
+
+        public int option { get; set; }
+
+
     }
 }

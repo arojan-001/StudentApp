@@ -36,6 +36,15 @@ namespace Student.BLL.Services
                 return new OperationDetails(true, "Success ", "");
             }
         }
+        public static List<int> GetFullMark()
+        {
+            return new List<int>(new int[] { 20, 50, 100 });
+        }
+
+        public static List<int> GetDuration()
+        {
+            return new List<int>(new int[] { 60, 90, 120 });
+        }
 
         public List<ExamDTO> GetAll()
         {

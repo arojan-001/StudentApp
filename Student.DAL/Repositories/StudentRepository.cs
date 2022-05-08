@@ -19,12 +19,34 @@ namespace Student.DAL.Repositories
         {
             return GetAll<Students>();
         }
+        public IEnumerable<ExamResult> GetExamResult()
+        {
+            return GetAll<ExamResult>();
+        }
 
         public Students GetById(string id)
         {
             return GetAll<Students>().FirstOrDefault(x => x.Id == id);
         }
+        public ExamResult GetExamResultById(int id)
+        {
+            return GetAll<ExamResult>().FirstOrDefault(x => x.Id == id);
+        }
+        public ExamResult GetExamResultByStudId(string id)
+        {
+            return GetAll<ExamResult>().FirstOrDefault(x => x.StudentId == id);
+        }
 
+        public void SaveExamResult(ExamResult product, bool isSaveChanges = true)
+        {
+            var dbProduct = Find<ExamResult>(product.Id);
+            if (dbProduct == null)
+                Add<ExamResult>(product);
+            else
+                SetValues(product, dbProduct);
+            if (isSaveChanges)
+                SaveChanges();
+        }
         public void SaveStudents(Students product, bool isSaveChanges = true)
         {
             var dbProduct = Find<Students>(product.Id);
@@ -35,7 +57,17 @@ namespace Student.DAL.Repositories
             if (isSaveChanges)
                 SaveChanges();
         }
-
+        public ExamResult DeleteStudents(int id, bool isSaveChanges = true)
+        {
+            var dbEntry = Find<ExamResult>(id);
+            if (dbEntry != null)
+            {
+                Remove(dbEntry);
+                if (isSaveChanges)
+                    SaveChanges();
+            }
+            return dbEntry;
+        }
         public Students DeleteStudents(string id, bool isSaveChanges = true)
         {
             var dbEntry = Find<Students>(id);
